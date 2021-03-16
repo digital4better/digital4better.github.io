@@ -1,10 +1,80 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="font-sans text-gray-900 leading-tight bg-gray-100">
 <head>
-<meta charset=utf-8>
-<title>Open Source by Digital4Better</title>
+    <meta charset=utf-8>
+    <title>Open Source by Digital4Better</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <p>Coming soon...</p>
+<body class="min-h-screen flex flex-col">
+<header class="text-white" style="background: #003878">
+    <div class="md:mx-auto max-w-5xl flex flex-col space-y-4 md:space-y-8 px-4 md:px-8 py-8">
+        <a href="/">
+            <img width="132" height="50" alt="Digital4Better" src="./img/logo.svg"/>
+        </a>
+        <h1 class="text-xl sm:text-2xl md:text-4xl font-bold">Open Source @Digital4Better</h1>
+        <div class="text-md sm:text-lg md:text-xl">
+            <p class="mb-2">L'Open Source est au coeur de notre activité : nous l'utilisons tous les jours par le biais d'outils et de frameworks.</p>
+            <p>Il est donc important pour nous de partager ici les projets issus de nos actions de mécénat ou tout simplement qu'il nous semble utile de partager avec la communauté.</p>
+        </div>
+    </div>
+</header>
+<main class="flex-grow">
+    <div class="md:mx-auto max-w-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-8 py-8">
+        <!-- Apprenti clavier -->
+        <figure class="flex flex-col space-y-4 bg-white rounded-md overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+            <img class="h-48 object-cover w-full" src="img/clavier.jpeg" alt="">
+            <figcaption class="px-4">
+                <h2 class="text-lg font-bold"><a class="no-underline hover:underline" href="#" target="_blank">Apprenti clavier</a></h2>
+                <p class="text-sm text-gray-500">En partenariat avec <a class="no-underline hover:underline" target="_blank" href="https://aciah-formations-informatiques-pour-tous.fr/">ACIAH</a></p>
+            </figcaption>
+            <blockquote class="flex-grow px-4">
+                Apprenez à taper au clavier avec cet outil adapté aux malvoyants.
+            </blockquote>
+            <div class="p-4 flex justify-center bg-gray-100">
+                <a class="no-underline hover:underline" href="https://github.com/digital4better/aciah-apprenti-clavier" target="_blank">
+                    <img width="24" height="24" alt="Github" src="./img/github.svg"/>
+                </a>
+            </div>
+        </figure>
+
+        <!-- Imprim'Chèque -->
+        <figure class="flex flex-col space-y-4 bg-white rounded-md overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+            <img class="h-48 object-cover w-full" src="img/cheque.jpeg" alt="">
+            <figcaption class="px-4">
+                <h2 class="text-lg font-bold"><a class="no-underline hover:underline" href="#" target="_blank">Imprim'Chèque</a></h2>
+                <p class="text-sm text-gray-500">En partenariat avec <a class="no-underline hover:underline" target="_blank" href="https://aciah-formations-informatiques-pour-tous.fr/">ACIAH</a></p>
+            </figcaption>
+            <blockquote class="flex-grow px-4">
+                Remplissez facilement vos chèques grâce à cet outil d'aide à la saisie.
+            </blockquote>
+            <div class="p-4 flex justify-center bg-gray-100">
+                <a class="no-underline hover:underline" href="https://github.com/digital4better/aciah-imprimcheque" target="_blank">
+                    <img width="24" height="24" alt="Github" src="./img/github.svg"/>
+                </a>
+            </div>
+        </figure>
+
+        <!-- Contact -->
+        <figure class="flex flex-col space-y-4 bg-white rounded-md overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+            <blockquote class="flex flex-col justify-center flex-grow pt-4 px-4 space-y-4">
+                <h2 class="text-lg font-bold">Que peut-on faire pour vous&nbsp;?</h2>
+                <ul class="list-disc pl-6 space-y-4">
+                    <li>Vous souhaitez bénéficier de notre programme de mécénat&nbsp;?</li>
+                    <li>Vous avez une idée d'application ou d'outil Tech4Good&nbsp;?</li>
+                    <li>Vous souhaitez nous rejoindre&nbsp;?</li>
+                </ul>
+                <div class="p-4 flex justify-center">
+                    <a class="px-6 py-3 w-full text-center rounded-3xl text-white" style="background:#F15842" href="https://digital4better.com/contact" target="_blank">Contactez nous !</a>
+                </div>
+            </blockquote>
+        </figure>
+
+    </div>
+</main>
+<footer class="text-white text-right" style="background: #003878">
+    <div class="md:mx-auto max-w-5xl px-4 md:px-8 py-2">
+        <p>//&nbsp;by&nbsp;<a class="no-underline hover:underline" href="https://digital4better.com" target="_blank">Digital4Better</a></p>
+    </div>
+</footer>
 </body>
 </html>
