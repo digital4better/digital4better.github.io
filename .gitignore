@@ -1,2 +1,4 @@
 .DS_Store
 .idea
+.jekyll-cache
+_site

@@ -1,12 +1,12 @@
 ---
-layout: default
 ---
 <!doctype html>
 <html lang="fr" class="font-sans text-gray-900 leading-tight bg-gray-100">
 <head>
+    <title>{{ site.title }}</title>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Open Source by Digital4Better</title>
+    <meta name="description" content="{{ site.description }}">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLQRSL0GQS"></script>
@@ -41,55 +41,21 @@ layout: default
 
         {% for app in site.data.apps %}
         <figure class="flex flex-col space-y-4 bg-white rounded-md overflow-hidden shadow-lg">
-            <img class="h-48 object-cover w-full" src="img/clavier.jpeg" alt="">
+            <img class="h-48 object-cover w-full" src="{{app.img}}" alt="">
             <figcaption class="px-4">
                 <h2 class="text-lg font-bold"><a class="no-underline hover:underline" href="/clavier" target="_blank">{{ app.name }}</a></h2>
-                <p class="text-sm text-gray-500">En partenariat avec <a class="no-underline hover:underline" target="_blank" href="https://aciah-formations-informatiques-pour-tous.fr/">ACIAH</a></p>
+                <p class="text-sm text-gray-500">En partenariat avec <a class="no-underline hover:underline" target="_blank" href="{{app.partner.url}}">{{app.partner.name}}</a></p>
             </figcaption>
             <blockquote class="flex-grow px-4">
-                Apprenez à taper au clavier avec cet outil adapté aux malvoyants.
+                {{app.description}}
             </blockquote>
             <div class="p-4 flex justify-center bg-gray-100">
-                <a class="no-underline hover:underline" href="https://github.com/digital4better/aciah-apprenti-clavier" target="_blank">
+                <a class="no-underline hover:underline" href="{{app.repo}}" target="_blank">
                     <img class="opacity-50 hover:opacity-100" width="24" height="24" alt="Github" src="./img/github.svg"/>
                 </a>
             </div>
         </figure>
         {% endfor %}
-
-        <!-- Apprenti clavier -->
-        <figure class="flex flex-col space-y-4 bg-white rounded-md overflow-hidden shadow-lg">
-            <img class="h-48 object-cover w-full" src="img/clavier.jpeg" alt="">
-            <figcaption class="px-4">
-                <h2 class="text-lg font-bold"><a class="no-underline hover:underline" href="/clavier" target="_blank">Apprenti clavier</a></h2>
-                <p class="text-sm text-gray-500">En partenariat avec <a class="no-underline hover:underline" target="_blank" href="https://aciah-formations-informatiques-pour-tous.fr/">ACIAH</a></p>
-            </figcaption>
-            <blockquote class="flex-grow px-4">
-                Apprenez à taper au clavier avec cet outil adapté aux malvoyants.
-            </blockquote>
-            <div class="p-4 flex justify-center bg-gray-100">
-                <a class="no-underline hover:underline" href="https://github.com/digital4better/aciah-apprenti-clavier" target="_blank">
-                    <img class="opacity-50 hover:opacity-100" width="24" height="24" alt="Github" src="./img/github.svg"/>
-                </a>
-            </div>
-        </figure>
-
-        <!-- Imprim'Chèque -->
-        <figure class="flex flex-col space-y-4 bg-white rounded-md overflow-hidden shadow-lg">
-            <img class="h-48 object-cover w-full" src="img/cheque.jpeg" alt="">
-            <figcaption class="px-4">
-                <h2 class="text-lg font-bold"><a class="no-underline hover:underline" href="/cheque" target="_blank">Imprim'Chèque</a></h2>
-                <p class="text-sm text-gray-500">En partenariat avec <a class="no-underline hover:underline" target="_blank" href="https://aciah-formations-informatiques-pour-tous.fr/">ACIAH</a></p>
-            </figcaption>
-            <blockquote class="flex-grow px-4">
-                Remplissez facilement vos chèques grâce à cet outil d'aide à la saisie.
-            </blockquote>
-            <div class="p-4 flex justify-center bg-gray-100">
-                <a class="no-underline hover:underline" href="https://github.com/digital4better/aciah-imprimcheque" target="_blank">
-                    <img class="opacity-50 hover:opacity-100" width="24" height="24" alt="Github" src="./img/github.svg"/>
-                </a>
-            </div>
-        </figure>
 
         <!-- Contact -->
         <figure class="flex flex-col py-4 space-y-4 bg-white rounded-md overflow-hidden shadow-lg">
