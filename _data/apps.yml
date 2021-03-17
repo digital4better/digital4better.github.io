@@ -1,0 +1,17 @@
+- name: Apprenti clavier
+  description: Apprenez à taper au clavier avec cet outil adapté aux malvoyants.
+  img: img/clavier.jpeg
+  folder: clavier
+  repo: https://github.com/digital4better/aciah-apprenti-clavier
+  partner:
+    name: ACIAH
+    url: https://aciah-formations-informatiques-pour-tous.fr
+
+- name: Imprim'Chèque
+  description: Remplissez facilement vos chèques grâce à cet outil d'aide à la saisie.
+  img: img/cheque.jpeg
+  folder: cheque
+  repo: https://github.com/digital4better/aciah-imprimcheque
+  partner:
+    name: ACIAH
+    url: https://aciah-formations-informatiques-pour-tous.fr
