@@ -27,13 +27,13 @@
             <img class="h-48 object-cover w-full" src="{{ app.img }}" alt="">
             <figcaption class="px-4">
                 <h2 class="text-lg font-bold"><a class="no-underline hover:underline" href="/{{ app.folder }}" target="_blank">{{ app.name }}</a></h2>
-                <p class="text-sm text-gray-500">En partenariat avec <a class="no-underline hover:underline" target="_blank" href="{{ app.partner.url }}">{{ app.partner.name }}</a></p>
+                <p class="text-sm text-gray-500">En partenariat avec <a class="no-underline hover:underline" target="_blank" href="{{ app.partner.url }}" rel="noopener">{{ app.partner.name }}</a></p>
             </figcaption>
             <blockquote class="flex-grow px-4">
                 {{app.description}}
             </blockquote>
             <div class="p-4 flex justify-center bg-gray-100">
-                <a class="no-underline hover:underline" href="{{ app.repo }}" target="_blank">
+                <a class="no-underline hover:underline" href="{{ app.repo }}" target="_blank" rel="noopener">
                     <img class="opacity-50 hover:opacity-100" width="24" height="24" alt="Github" src="./img/github.svg"/>
                 </a>
             </div>
@@ -50,7 +50,7 @@
                     <li>Vous souhaitez nous rejoindre&nbsp;?</li>
                 </ul>
                 <div class="pt-4 flex justify-center">
-                    <a class="px-6 py-3 w-full text-center rounded-3xl text-white" style="background:#F15842" href="https://digital4better.com/contact" target="_blank">Contactez nous !</a>
+                    <a class="px-6 py-3 w-full text-center rounded-3xl text-white" style="background:#F15842" href="https://digital4better.com/contact" target="_blank" rel="noopener">Contactez nous !</a>
                 </div>
             </blockquote>
         </figure>
