@@ -1,4 +1,4 @@
-- name: Apprenti clavier
+- name: CooKey
   description: Apprenez à taper au clavier avec cet outil adapté aux malvoyants.
   img: img/clavier.jpeg
   folder: clavier
@@ -7,7 +7,7 @@
     name: ACIAH
     url: https://aciah-formations-informatiques-pour-tous.fr
 
-- name: Imprim'Chèque
+- name: MilkCheck
   description: Remplissez facilement vos chèques grâce à cet outil d'aide à la saisie.
   img: img/cheque.jpeg
   folder: cheque
