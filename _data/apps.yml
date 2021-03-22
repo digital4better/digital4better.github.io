@@ -1,7 +1,7 @@
 - name: CooKeys
   description: Apprenez à taper au clavier avec cet outil adapté aux malvoyants.
   img: img/clavier.jpeg
-  folder: clavier
+  url: /clavier
   repo: https://github.com/digital4better/aciah-apprenti-clavier
   partner:
     name: ACIAH
@@ -10,8 +10,17 @@
 - name: MilkCheque
   description: Remplissez facilement vos chèques grâce à cet outil d'aide à la saisie.
   img: img/cheque.jpeg
-  folder: cheque
+  url: /cheque
   repo: https://github.com/digital4better/aciah-imprimcheque
   partner:
     name: ACIAH
     url: https://aciah-formations-informatiques-pour-tous.fr
+
+- name: Carbonara
+  description: Un web component affichant en temps réel l'empreinte de la navigation d'un internaute.
+  img: img/carbonara.jpeg
+  url: https://github.com/digital4better/carbonara
+  repo: https://github.com/digital4better/carbonara
+  partner:
+    name: D4B
+    url: https://digital4better.com

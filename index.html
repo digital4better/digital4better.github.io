@@ -27,7 +27,7 @@
         <figure class="flex flex-col space-y-4 bg-white rounded-md overflow-hidden shadow-lg">
             <img class="h-48 object-cover w-full" src="{{ app.img }}" alt="">
             <figcaption class="px-4">
-                <h2 class="text-lg font-bold"><a class="no-underline hover:underline" href="/{{ app.folder }}" target="_blank">{{ app.name }}</a></h2>
+                <h2 class="text-lg font-bold"><a class="no-underline hover:underline" href="{{ app.url }}" target="_blank">{{ app.name }}</a></h2>
                 <p class="text-sm text-gray-500">En partenariat avec <a class="no-underline hover:underline" target="_blank" href="{{ app.partner.url }}" rel="noopener">{{ app.partner.name }}</a></p>
             </figcaption>
             <blockquote class="flex-grow px-4">
