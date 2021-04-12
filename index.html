@@ -2,62 +2,62 @@
 ---
 <!doctype html>
 <html lang="fr" class="font-sans text-gray-900 leading-tight bg-gray-100">
-<head>
-    <title>{{ site.title }}</title>
-    <meta charset=utf-8>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="{{ site.description }}">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLQRSL0GQS"></script>
-    <script async src="https://unpkg.com/@digital4better/carbonara@latest/dist/carbonara.js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-WLQRSL0GQS');
-    </script>
-</head>
-<body class="min-h-screen flex flex-col">
-{% include header.html %}
-<main class="flex-grow" style="padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right);">
-    <div class="md:mx-auto max-w-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 px-4 md:px-8 py-4 md:py-8">
+    <head>
+        <title>{{ site.title }}</title>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="description" content="{{ site.description }}">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLQRSL0GQS"></script>
+        <script async src="https://unpkg.com/@digital4better/carbonara@latest/dist/carbonara.js"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WLQRSL0GQS');
+        </script>
+    </head>
+    <body class="min-h-screen flex flex-col">
+        {% include header.html %}
+        <main class="flex-grow" style="padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right);">
+            <div class="md:mx-auto max-w-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 px-4 md:px-8 py-4 md:py-8">
 
-        {% for app in site.data.apps %}
-        <figure class="flex flex-col space-y-4 bg-white rounded-md overflow-hidden shadow-lg">
-            <img class="h-48 object-cover w-full" src="{{ app.img }}" alt="">
-            <figcaption class="px-4">
-                <h2 class="text-lg font-bold"><a class="no-underline hover:underline" href="{{ app.url }}" target="_blank">{{ app.name }}</a></h2>
-                <p class="text-sm text-gray-500">En partenariat avec <a class="no-underline hover:underline" target="_blank" href="{{ app.partner.url }}" rel="noopener">{{ app.partner.name }}</a></p>
-            </figcaption>
-            <blockquote class="flex-grow px-4">
-                {{app.description}}
-            </blockquote>
-            <div class="p-4 flex justify-center bg-gray-100">
-                <a class="no-underline hover:underline" href="{{ app.repo }}" target="_blank" rel="noopener">
-                    <img class="opacity-50 hover:opacity-100" width="24" height="24" alt="Github" src="./img/github.svg"/>
-                </a>
+                {% for app in site.data.apps %}
+                <figure class="flex flex-col space-y-4 bg-white rounded-md overflow-hidden shadow-lg">
+                    <img class="h-48 object-cover w-full" src="{{ app.img }}" alt="">
+                    <figcaption class="px-4">
+                        <h2 class="text-lg font-bold"><a class="no-underline hover:underline" href="{{ app.url }}" target="_blank">{{ app.name }}</a></h2>
+                        <p class="text-sm text-gray-500">En partenariat avec <a class="no-underline hover:underline" target="_blank" href="{{ app.partner.url }}" rel="noopener">{{ app.partner.name }}</a></p>
+                    </figcaption>
+                    <blockquote class="flex-grow px-4">
+                        {{app.description}}
+                    </blockquote>
+                    <div class="p-4 flex justify-center bg-gray-100">
+                        <a class="no-underline hover:underline" href="{{ app.repo }}" target="_blank" rel="noopener">
+                            <img class="opacity-50 hover:opacity-100" width="24" height="24" alt="Github" src="./img/github.svg"/>
+                        </a>
+                    </div>
+                </figure>
+                {% endfor %}
+
+                <!-- Contact -->
+                <figure class="flex flex-col py-4 space-y-4 bg-white rounded-md overflow-hidden shadow-lg">
+                    <blockquote class="flex flex-col justify-center flex-grow px-4 space-y-4">
+                        <h2 class="text-lg font-bold">Que peut-on faire pour vous&nbsp;?</h2>
+                        <ul class="list-disc pl-6 space-y-4">
+                            <li>Vous souhaitez bénéficier de notre programme de mécénat&nbsp;?</li>
+                            <li>Vous avez une idée d'application ou d'outil Tech4Good&nbsp;?</li>
+                            <li>Vous souhaitez nous rejoindre&nbsp;?</li>
+                        </ul>
+                        <div class="pt-4 flex justify-center">
+                            <a class="px-6 py-3 w-full text-center rounded-3xl text-white" style="background:#F15842" href="https://digital4better.com/contact" target="_blank" rel="noopener">Contactez nous !</a>
+                        </div>
+                    </blockquote>
+                </figure>
+
             </div>
-        </figure>
-        {% endfor %}
-
-        <!-- Contact -->
-        <figure class="flex flex-col py-4 space-y-4 bg-white rounded-md overflow-hidden shadow-lg">
-            <blockquote class="flex flex-col justify-center flex-grow px-4 space-y-4">
-                <h2 class="text-lg font-bold">Que peut-on faire pour vous&nbsp;?</h2>
-                <ul class="list-disc pl-6 space-y-4">
-                    <li>Vous souhaitez bénéficier de notre programme de mécénat&nbsp;?</li>
-                    <li>Vous avez une idée d'application ou d'outil Tech4Good&nbsp;?</li>
-                    <li>Vous souhaitez nous rejoindre&nbsp;?</li>
-                </ul>
-                <div class="pt-4 flex justify-center">
-                    <a class="px-6 py-3 w-full text-center rounded-3xl text-white" style="background:#F15842" href="https://digital4better.com/contact" target="_blank" rel="noopener">Contactez nous !</a>
-                </div>
-            </blockquote>
-        </figure>
-
-    </div>
-</main>
-{% include footer.html %}
-</body>
+        </main>
+        {% include footer.html %}
+    </body>
 </html>
