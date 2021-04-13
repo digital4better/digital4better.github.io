@@ -2,7 +2,7 @@
   description: Apprenez à taper au clavier avec cet outil adapté aux malvoyants.
   img: img/clavier.jpeg
   url: /clavier
-  repo: https://github.com/digital4better/aciah-apprenti-clavier
+  repo: https://github.com/digital4better/cookeys
   partner:
     name: ACIAH
     url: https://aciah-formations-informatiques-pour-tous.fr
@@ -11,7 +11,7 @@
   description: Remplissez facilement vos chèques grâce à cet outil d'aide à la saisie.
   img: img/cheque.jpeg
   url: /cheque
-  repo: https://github.com/digital4better/aciah-imprimcheque
+  repo: https://github.com/digital4better/milkcheque
   partner:
     name: ACIAH
     url: https://aciah-formations-informatiques-pour-tous.fr
