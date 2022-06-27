@@ -24,3 +24,12 @@
   partner:
     name: D4B
     url: https://digital4better.com
+
+- name: Malo
+  description: Machine à lire open source.
+  img: img/malo.PNG
+  url: https://github.com/digital4better/machine-a-lire
+  repo: https://github.com/digital4better/machine-a-lire
+  partner:
+    name: ACIAH
+    url: https://aciah-formations-informatiques-pour-tous.fr
