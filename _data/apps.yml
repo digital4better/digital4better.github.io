@@ -36,7 +36,7 @@
 
 - name: Monaplie
   description: Retrouvez des ressources en ligne pour faciliter la réinsertion dans la vie active.
-  img: img/plie.png
+  img: img/plie.jpg
   url: https://www.monaplie.fr/
   repo: https://github.com/digital4better/monaplie
   partner:
