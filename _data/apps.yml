@@ -51,3 +51,12 @@
   partner:
     name: PLIE
     url: https://www.atdec.org/qui-sommes-nous/
+
+- name: Eco4Better
+  description: Outillage permettant de benchmarker nos manières de coder afin de voir quel impact environnemental cela peut engendrer.
+  img: img/eco4Better.jpeg
+  url: https://github.com/digital4better/eco4Better
+  repo: https://github.com/digital4better/eco4Better
+  partner:
+    name: D4B
+    url: https://digital4better.com
